@@ -1,4 +1,6 @@
-﻿namespace GIFMaker
+﻿using System.Windows.Forms;
+
+namespace GIFMaker
 {
     partial class Form3
     {
@@ -20,6 +22,20 @@
             base.Dispose(disposing);
         }
 
+        public class DoubleBufferPanel : Panel
+        {
+            public DoubleBufferPanel()
+            {
+                this.SetStyle(ControlStyles.DoubleBuffer, true);
+
+                this.SetStyle(ControlStyles.AllPaintingInWmPaint, true);
+
+                this.SetStyle(ControlStyles.UserPaint, true);
+
+                this.UpdateStyles();
+            }
+        }
+
         #region Windows Form Designer generated code
 
         /// <summary>
@@ -30,7 +46,7 @@
         {
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
-            this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
+            this.metroPanel1 = new DoubleBufferPanel();
             this.metroButton2 = new MetroFramework.Controls.MetroButton();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
@@ -74,17 +90,17 @@
             // metroPanel1
             // 
             this.metroPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.metroPanel1.HorizontalScrollbarBarColor = true;
-            this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.HorizontalScrollbarSize = 8;
+            //this.metroPanel1.HorizontalScrollbarBarColor = true;
+            //this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
+            //this.metroPanel1.HorizontalScrollbarSize = 8;
             this.metroPanel1.Location = new System.Drawing.Point(70, 65);
             this.metroPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroPanel1.Name = "metroPanel1";
             this.metroPanel1.Size = new System.Drawing.Size(612, 247);
             this.metroPanel1.TabIndex = 2;
-            this.metroPanel1.VerticalScrollbarBarColor = true;
-            this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.VerticalScrollbarSize = 9;
+            //this.metroPanel1.VerticalScrollbarBarColor = true;
+            //this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
+            //this.metroPanel1.VerticalScrollbarSize = 9;
             // 
             // metroButton2
             // 
@@ -267,7 +283,7 @@
 
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private MetroFramework.Controls.MetroButton metroButton1;
-        private MetroFramework.Controls.MetroPanel metroPanel1;
+        private DoubleBufferPanel metroPanel1;
         private MetroFramework.Controls.MetroButton metroButton2;
         private MetroFramework.Controls.MetroLabel metroLabel2;
         private MetroFramework.Controls.MetroLabel metroLabel3;

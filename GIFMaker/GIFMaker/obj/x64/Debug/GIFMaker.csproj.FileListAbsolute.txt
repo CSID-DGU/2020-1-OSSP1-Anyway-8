@@ -38,3 +38,5 @@ C:\Users\0733\Documents\GitHub\2020-1-OSSP1-Anyway-8\GIFMaker\GIFMaker\obj\x64\D
 C:\Users\0733\Documents\GitHub\2020-1-OSSP1-Anyway-8\GIFMaker\GIFMaker\obj\x64\Debug\GIFMaker.pdb
 D:\OSSP\Anyway\GIFMaker\GIFMaker\bin\x64\Debug\nQuant.Core.dll
 D:\OSSP\Anyway\GIFMaker\GIFMaker\bin\x64\Debug\nQuant.Core.pdb
+C:\Users\0733\Documents\GitHub\2020-1-OSSP1-Anyway-8\GIFMaker\GIFMaker\bin\x64\Debug\nQuant.Core.dll
+C:\Users\0733\Documents\GitHub\2020-1-OSSP1-Anyway-8\GIFMaker\GIFMaker\bin\x64\Debug\nQuant.Core.pdb
